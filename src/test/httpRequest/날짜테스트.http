@@ -1,0 +1,22 @@
+### yyyyMMdd 포맷 local date
+
+POST http://localhost:8080/api/v1/test/no-dash
+Content-Type: application/json
+
+{
+  "startDate": "20230712"
+}
+
+### yyyy-MM-dd 포맷 테스트
+
+POST http://localhost:8080/api/v1/test/dash
+Content-Type: application/json
+
+{
+  "date": "2023-07-12"
+}
+
+### feign 통신
+
+POST http://localhost:8080/api/v1/test/client
+Content-Type: application/json
